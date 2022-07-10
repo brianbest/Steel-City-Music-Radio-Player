@@ -1,0 +1,37 @@
+#bb-radio [data-play] {
+  color: #000000;
+  text-decoration: none;
+  display:block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#bb-radio [data-play] .bb-label-pause {
+  display: none;
+  opacity: 0;
+}
+
+#bb-radio [data-play] .bb-label-pause svg {
+  align-self: center;
+}
+
+#bb-radio [data-play] div {
+  display: flex;
+  align-content: center;
+  position: absolute;
+}
+
+#bb-radio [data-play] div span {
+  align-self: center;
+}
+
+#bb-radio.bb-playing [data-play] .bb-label-pause {
+  display: flex;
+  opacity: 1;
+}
+
+#bb-radio.bb-playing [data-play] .bb-label-play {
+  display: none;
+  opacity: 0;
+}
