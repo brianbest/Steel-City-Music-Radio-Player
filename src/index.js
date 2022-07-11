@@ -2,7 +2,7 @@ const $ = require("jquery");
 const html = require('./index.html');
 const css = require('./style.css');
 
-class SCMPlayer {
+class Player {
   constructor(){
     this.el = this.createElement();
     this.styles = this.createStyles();
@@ -53,6 +53,6 @@ class SCMPlayer {
   }
 }
 
-module.exports = SCMPlayer;
+module.exports = Player;
 
 

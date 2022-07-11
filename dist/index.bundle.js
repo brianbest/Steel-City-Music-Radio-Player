@@ -1,14 +1,5 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["SCM"] = factory();
-	else
-		root["SCM"] = factory();
-})(this, () => {
-return /******/ (() => { // webpackBootstrap
+var SCM;
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ([
 /* 0 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
@@ -17,7 +8,7 @@ const $ = __webpack_require__(1);
 const html = __webpack_require__(2);
 const css = __webpack_require__(3);
 
-class SCMPlayer {
+class Player {
   constructor(){
     this.el = this.createElement();
     this.styles = this.createStyles();
@@ -68,7 +59,7 @@ class SCMPlayer {
   }
 }
 
-module.exports = SCMPlayer;
+module.exports = Player;
 
 
 
@@ -11191,8 +11182,7 @@ module.exports = function (cssWithMappingToString) {
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__(0);
+/******/ 	SCM = __webpack_exports__;
 /******/ 	
-/******/ 	return __webpack_exports__;
 /******/ })()
 ;
-});
