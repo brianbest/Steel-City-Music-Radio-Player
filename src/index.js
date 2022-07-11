@@ -42,13 +42,13 @@ class Player {
 
   createElement() {
     const div = document.createElement('div');
-    div.innerHTML = html.trim();
+    div.innerHTML = html.default.trim();
     return div.firstChild;
   }
 
   createStyles() {
     const style = document.createElement('style');
-    style.innerHTML = css;
+    style.innerHTML = css.default;
     return style;
   }
 }
