@@ -4,6 +4,9 @@ module.exports = {
   entry: './src/index.js',
   mode: 'none',
   output: {
+    library: 'SCM',
+    libraryTarget: 'umd',
+    globalObject: 'this',
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.bundle.js',
   },

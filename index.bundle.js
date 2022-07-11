@@ -1,4 +1,14 @@
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["SCM"] = factory();
+	else
+		root["SCM"] = factory();
+})(this, () => {
+return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ([
 /* 0 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
@@ -11182,5 +11192,7 @@ module.exports = function (cssWithMappingToString) {
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__(0);
 /******/ 	
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});

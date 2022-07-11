@@ -1,8 +1,7 @@
 {
-  "name": "Steel-City-Music-Radio-Player",
+  "name": "steel-city-music-radio-player",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +10,10 @@
     "url": "git+https://github.com/brianbest/Steel-City-Music-Radio-Player.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Brian Best",
+    "url": "https://github.com/brianbest"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brianbest/Steel-City-Music-Radio-Player/issues"
